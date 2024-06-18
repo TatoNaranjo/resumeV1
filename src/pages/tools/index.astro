@@ -3,14 +3,49 @@ import PageLayout from '@/layouts/BaseLayout.astro'
 import ToolSection from '@/components/ToolSection.astro'
 import Button from '@/components/Button.astro'
 
-const DESIGN = [
+const PROGRAMMING_LANGUAGES = [
 	{
-		name: 'Figma',
-		description: 'Design Tool',
-		href: 'https://www.figma.com/',
-		iconPath: 'figma',
+		name: 'Matlab',
+		description: 'Programming and numeric computing platform.',
+		href: 'https://www.mathworks.com/products/matlab.html',
+		iconPath: 'matlab',
 		iconBgColour: '#000001'
-	}
+	},
+	{
+		name: 'Python',
+		description: 'General-purpose back-end programming language.',
+		href: 'https://www.python.org/',
+		iconPath: 'python',
+		iconBgColour: '#000001'
+	},
+	{
+		name: 'C#',
+		description: 'General-purpose back-end programming language.',
+		href: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+		iconPath: 'csharp',
+		iconBgColour: '#00599C'
+	},
+	{
+		name:'.NET',
+		description: 'General-purpose back-end programming language.',
+		href: 'https://dotnet.microsoft.com/',
+		iconPath: 'dotnet',
+		iconBgColour: '#512BD4'
+	},
+	{
+		name:'C++',
+		description: 'General-purpose back-end programming language.',
+		href: 'https://isocpp.org/',
+		iconPath: 'cpp',
+		iconBgColour: '#00599C'
+	},
+	{
+		name: 'JavaScript',
+		description: 'High-level programming language.',
+		href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+		iconPath: 'javascript',
+		iconBgColour: '#F7DF1E'
+	},
 ]
 
 const PRODUCTIVITY = [
@@ -46,6 +81,20 @@ const DEVELOPMENT = [
 		iconBgColour: '#2C2C32'
 	},
 	{
+		name:'Visual Studio',
+		description: 'IDE',
+		href: 'https://visualstudio.microsoft.com/',
+		iconPath: 'vstudio',
+		iconBgColour: '#5C2D91'
+	},
+	{
+		name: 'GitHub',
+		description: 'Version Control',
+		href: 'https://github.com/',
+		iconPath: 'github',
+		iconBgColour: '#181717'
+	},
+	{
 		name: 'ChatGPT',
 		description: 'AI',
 		href: 'https://chat.openai.com/',
@@ -79,7 +128,7 @@ const DEVELOPMENT = [
 				<p>Tools and software I use daily</p>
 			</div>
 
-			<ToolSection title='Design' tools={DESIGN} />
+			<ToolSection title='Programming Languages' tools={PROGRAMMING_LANGUAGES} />
 			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
 			<ToolSection title='Development' tools={DEVELOPMENT} />
 		</div>
